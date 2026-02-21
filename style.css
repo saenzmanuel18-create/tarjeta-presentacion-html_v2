@@ -1,0 +1,95 @@
+/* Importar una fuente limpia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Gris casi blanco para el fondo general */
+    padding: 40px 20px;
+    color: #333; /* Negro suave para lectura */
+}
+
+/* Contenedor principal para centrar todo */
+.main-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nombre_cabeza {
+    text-align: center;
+    color: navy;
+    padding: 40px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nombre_cabeza h1 {
+    font-weight: 600;
+    border-bottom: 3px solid beige; /* Subrayado elegante en beige */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contenedor_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.imagen_cabeza {
+    border-radius: 20px; /* Más redondeado para look moderno */
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    filter: grayscale(20%); /* Efecto visual sutil */
+    border: 8px solid navy; /* Marco elegante */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra muy tenue */
+}
+
+/* Estilo unificado para las secciones (Tarjetas) */
+.Descripcion_profesional, 
+.lista_abilidades, 
+.formacion_experencia {
+    background-color: white; /* Tarjetas blancas sobre fondo gris */
+    color: #333;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 25px;
+    border-left: 5px solid beige; /* Detalle minimalista lateral */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02); /* Casi imperceptible */
+    transition: all 0.3s ease;
+}
+
+/* Resaltar títulos internos */
+.Descripcion_profesional h2, 
+.lista_abilidades h2, 
+.formacion_experencia h2 {
+    color: navy;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.Descripcion_profesional:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.footer {
+    color: #888; /* Gris para el footer */
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+}
+
+/* Clase para resaltar texto en Navy si lo necesitas */
+.text-highlight {
+    color: navy;
+    font-weight: 600;
+}
